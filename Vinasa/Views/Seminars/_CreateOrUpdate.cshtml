@@ -1,0 +1,18 @@
+﻿@model Seminar
+
+<div class="input-wrapper">
+    <input type="text" asp-for="Title" required>
+    <label asp-for="Title"></label>
+</div>
+<div class="input-wrapper">
+    <input type="text" asp-for="OpenDate" required>
+    <label asp-for="OpenDate"></label>
+</div>
+<div class="input-wrapper">
+    <input type="text" asp-for="Address" required>
+    <label asp-for="Address"></label>
+</div>
+<div class="button-form">
+    <input type="submit" class="button" value="Xác Nhận"></input>
+    <a asp-action="List" class="button" >Hủy</a>
+</div>

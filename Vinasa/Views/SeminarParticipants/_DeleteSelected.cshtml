@@ -1,0 +1,20 @@
+﻿@model SeminarParticipant
+<form asp-action="Delete">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Xoá Hội Thảo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            Bạn có chắc chắn xoá?
+        </div>
+        <div class="modal-footer">
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" id="SeminarId" name="SeminarId" value="@ViewBag.SeminarId" />
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Huỷ</button>
+            <input type="submit" class="btn btn-primary" value="Đồng ý" />
+        </div>
+    </div>
+</form>

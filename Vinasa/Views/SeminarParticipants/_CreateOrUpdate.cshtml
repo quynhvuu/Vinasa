@@ -1,0 +1,81 @@
+﻿@model SeminarParticipant
+
+<div class="input-wrapper">
+     <label asp-for="Name" class="control-label"></label>
+    <input asp-for="Name" class="form-control" />
+</div>
+
+<div class="input-wrapper">
+    <label asp-for="TaxNumber" class="control-label"></label>
+    <input asp-for="TaxNumber" class="form-control" />
+</div>
+
+<div class="input-wrapper">
+     <label asp-for="Company" class="control-label"></label>
+     <input asp-for="Company" class="form-control" />
+</div>
+
+<div class="input-wrapper">
+    <label asp-for="Position" class="control-label"></label>
+    <input asp-for="Position" class="form-control" />
+</div>
+
+<div class="input-wrapper">
+    <label asp-for="Email" class="control-label"></label>
+    <input asp-for="Email" class="form-control" />
+</div>
+
+<div class="input-wrapper">
+    <label asp-for="PhoneNumber" class="control-label"></label>
+    <input asp-for="PhoneNumber" class="form-control" />
+</div>
+
+<div class="input-wrapper">
+    <label asp-for="ProvinceId" class="control-label"></label>
+    <select asp-for="ProvinceId" class="form-control select-region">
+        <option value="none">Chọn Khu Vực</option>
+
+        <option value="">HCM</option>
+        <option value="">HN</option>
+        <option value="">MT</option>
+
+    </select>
+</div>
+
+<div class="input-wrapper">
+    <label asp-for="JobTitle" class="control-label"></label>
+    <input asp-for="JobTitle" class="form-control" />
+</div>
+
+<div class="input-wrapper">
+    <label asp-for="Operation" class="control-label"></label>
+    <input asp-for="Operation" class="form-control" />
+</div>
+
+<div class="input-wrapper">
+   <label class="form-check-label">
+        <input class="form-check-input" asp-for="RegistrySeminar" /> @Html.DisplayNameFor(model => model.RegistrySeminar)
+    </label>
+</div>
+
+<div class="input-wrapper">
+   <label class="form-check-label">
+        <input class="form-check-input" asp-for="RegistryBusinessMatching" /> @Html.DisplayNameFor(model => model.RegistryBusinessMatching)
+    </label>
+</div>
+
+<div class="input-wrapper">
+   <label class="form-check-label">
+        <input class="form-check-input" asp-for="RegistryExhibition" /> @Html.DisplayNameFor(model => model.RegistryExhibition)
+    </label>
+</div>
+
+<div class="input-wrapper">
+   <label class="form-check-label">
+        <input class="form-check-input" asp-for="RegistryTicket" /> @Html.DisplayNameFor(model => model.RegistryTicket)
+    </label>
+</div>
+<div class="button-form">
+    <input type="submit" class="button" value="Xác Nhận"></input>
+    <a asp-action="List" class="button">Hủy</a>
+</div>
